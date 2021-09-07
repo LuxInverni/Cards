@@ -1,0 +1,52 @@
+/*   Infographic Cards .  */
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  display: flex;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 10vh;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.01);
+}
+
+.container .card {
+  flex: 1;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 2vh;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.container .card .content {
+  margin-top: 15px;
+  background-color: #ffffff;
+  padding: 1vw;
+  margin-bottom: 4vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.gradient-line {
+    width: 100%;
+    height: 20px;
+    margin-top: -10px;
+    background: linear-gradient(35deg,  #BBFF99, #00FFAA, #00994D);
+  }
+  
+@media (max-width: 767px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .container .card {
+    flex: 0 0 100%;
+  }
+}
